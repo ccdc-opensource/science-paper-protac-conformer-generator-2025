@@ -315,7 +315,7 @@ class ProtacConformerGenerator(ConformerGenerator):
 
         :param original: experimentally observed conformation
         :param conformers: generated conformations
-        :return: conformer with lower RMSD, its RMSD, its index, nested list containing RMSD values for each conformer
+        :return: conformer with lowest RMSD, its RMSD, its index, nested list containing RMSD values for each conformer
         """
         best_rmsd = 1e9
         best_conformer = None
@@ -460,7 +460,7 @@ def _randomize(mol):
 
 def _find_the_closest_conformer_to_reference_structure(args, ptcg, molecules):
     """
-    Find the closest conformer to the reference structure. If a no reference structure is explicitly provided as
+    Find the closest conformer to the reference structure. If no reference structure is explicitly provided as
     argument, the initial input PROTAC molecule model will be used are reference instead.
     """
     if args.find_closest_to is not None:

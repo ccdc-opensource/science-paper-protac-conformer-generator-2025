@@ -5,7 +5,7 @@ Supporting code for "Data-driven generation of conformational ensembles and tern
 ## Overview
 
 The PROTAC Conformer Generator (PCG) is a CSD Python API workflow for generating conformational ensembles of PROTAC (Proteolysis Targeting Chimera) molecules with optional protein-protein interaction scoring. 
-The algorithm samples the linker region while keeping the warhead and E3 binding group conformations fixed to provided observed (experimental or modeled) structures.
+The algorithm samples the linker region while keeping the warhead and E3 binding group conformations fixed to provided structures (experimental or modeled).
 
 Minimal required inputs:
 
@@ -78,10 +78,10 @@ An example folder (example_6HAX) is included containing:
 
 To run the example:
 1. Copy protacs_conformer_generator.py and all the files in example_6HAX to the same directory
-2. Open a powershell, command-promt, or temrminal and navigate to the directory
+2. Open a powershell, command-promt, or terminal and navigate to the directory
 
 ```bash
-python protacs_conformer_generator.py protac.mol2 e3_binder.mol2 warhead.mol2 --proteins_to_align e3_complex.pdb poi_complex.pdb --max_conformations 10 --number_of_threads 8
+python protacs_conformer_generator.py protac.mol2 e3_binding_group.mol2 warhead.mol2 --proteins_to_align e3_complex.pdb poi_complex.pdb --max_conformations 10 --number_of_threads 8
 ```
 
 ### Key Parameters
@@ -116,7 +116,7 @@ Changing the parameters has not been extensively tested; use at your own risk.
 - **protacs_conformers.mol2**: Generated conformer ensemble
 - **protacs_full_results.csv**: Scores (RMSD, clash, surface, rankings)
 - **closest.mol2**: Conformer closest to reference (if requested)
-- **full_model_#.mol2**: Individual ternary complex models (if proteins supplied)
+- **full_model_#.mol2**: Individual ternary complex models (if proteins supplied — # is the the conformer rank).
 - **protac_best_conformer_[metric].mol2**: Best per scoring metric
 
 ## Citation
