@@ -1,2 +1,3 @@
-The CCDC PROTACs Conformer Generator © 2025 by CCDC is licensed under CC BY-SA 4.0. 
-To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+# License
+The CCDC PROTACs Conformer Generator © 2025 by CCDC is licensed under CC BY-SA 4.0.  
+To view a copy of this license, visit <https://creativecommons.org/licenses/by-sa/4.0/>

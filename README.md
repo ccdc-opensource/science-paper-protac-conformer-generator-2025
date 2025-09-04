@@ -1,10 +1,10 @@
 # PROTAC Conformer Generator (PCG)
 
-Supporting code for "Data-driven generation of conformational ensembles and ternary complexes for PROTAC and other Chimera systems" (https://doi.org/10.1021/acs.jcim.5c00880).
+Supporting code for "Data-driven generation of conformational ensembles and ternary complexes for PROTAC and other Chimera systems" (<https://doi.org/10.1021/acs.jcim.5c00880>).
 
 ## Overview
 
-The PROTAC Conformer Generator (PCG) is a CSD Python API workflow for generating conformational ensembles of PROTAC (Proteolysis Targeting Chimera) molecules with optional protein-protein interaction scoring. 
+The PROTAC Conformer Generator (PCG) is a CSD Python API workflow for generating conformational ensembles of PROTAC (Proteolysis Targeting Chimera) molecules with optional protein-protein interaction scoring.
 The algorithm samples the linker region while keeping the warhead and E3 binding group conformations fixed to provided structures (experimental or modeled).
 
 Minimal required inputs:
@@ -73,10 +73,11 @@ An example folder (example_6HAX) is included containing:
 - protac.mol2
 - e3_binding_group.mol2
 - warhead.mol2
-- e3_complex.pdb 
-- poi_complex.pdb 
+- e3_complex.pdb
+- poi_complex.pdb
 
 To run the example:
+
 1. Copy protacs_conformer_generator.py and all the files in example_6HAX to the same directory
 2. Open a powershell, command-prompt, or terminal and navigate to the directory
 
@@ -85,6 +86,7 @@ python protacs_conformer_generator.py protac.mol2 e3_binding_group.mol2 warhead.
 ```
 
 ### Key Parameters
+
 - `--number_of_threads`: Parallel threads (default: 1)
 - `--max_conformations`: Maximum conformers to generate
 - `--find_closest_to`: Reference structure for RMSD (defaults to input PROTAC if omitted)
@@ -93,26 +95,30 @@ python protacs_conformer_generator.py protac.mol2 e3_binding_group.mol2 warhead.
 - `--output_ranking`: CSV with scoring/results (default: protacs_full_results.csv)
 
 ### Filtering
+
 - `--clashscore_range` min max
 - `--surfacescore_range` min max
 
 Only models within specified ranges are written.
 
 ### Scoring Parameter Overrides
+
 Changing the parameters has not been extensively tested; use at your own risk.
 
 **Clash Score:**
+
 - `--cs_min_d` (default 1.0)
 - `--cs_max_d` (default 2.0)
 - `--cs_max_height` (default 10.0)
 
 **Surface Score:**
+
 - `--ss_min_d` (default 2.0)
 - `--ss_max_d` (default 4.0)
 - `--ss_max_height` (default 10.0)
 
-
 ## Output Files
+
 - **protacs_conformers.mol2**: Generated conformer ensemble
 - **protacs_full_results.csv**: Scores (RMSD, clash, surface, rankings)
 - **closest.mol2**: Conformer closest to reference (if requested)
@@ -121,8 +127,8 @@ Changing the parameters has not been extensively tested; use at your own risk.
 
 ## Citation
 
-Please cite the associated scientific paper: 
-https://doi.org/10.1021/acs.jcim.5c00880
+Please cite the associated scientific paper:
+<https://doi.org/10.1021/acs.jcim.5c00880>
 
 ## License
 
@@ -133,6 +139,7 @@ Provided by the Cambridge Crystallographic Data Centre (CCDC).  See the license 
 This script is provided as-is and is not formally supported by CCDC at this time. For questions or issues, please refer to the CSD Python API documentation or contact the authors.
 
 ## Authors
+
 - **Jason Cole** (<cole@ccdc.cam.ac.uk>) - Original implementation
 - **Kepa K. Burusco-Goni** (<kburusco@ccdc.cam.ac.uk>) - Parallel implementation and bug fixes
 - **Fabio Montisci** (<fmontisci@ccdc.cam.ac.uk>) - Documentation and code cleanup
