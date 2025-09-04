@@ -1,6 +1,6 @@
 # PROTAC Conformer Generator (PCG)
 
-Supporting code for "Data-driven generation of conformational ensembles and ternary complexes for PROTAC and other Chimera systems" (DOI pending).
+Supporting code for "Data-driven generation of conformational ensembles and ternary complexes for PROTAC and other Chimera systems" (https://doi.org/10.1021/acs.jcim.5c00880).
 
 ## Overview
 
@@ -78,7 +78,7 @@ An example folder (example_6HAX) is included containing:
 
 To run the example:
 1. Copy protacs_conformer_generator.py and all the files in example_6HAX to the same directory
-2. Open a powershell, command-promt, or terminal and navigate to the directory
+2. Open a powershell, command-prompt, or terminal and navigate to the directory
 
 ```bash
 python protacs_conformer_generator.py protac.mol2 e3_binding_group.mol2 warhead.mol2 --proteins_to_align e3_complex.pdb poi_complex.pdb --max_conformations 10 --number_of_threads 8
@@ -121,11 +121,12 @@ Changing the parameters has not been extensively tested; use at your own risk.
 
 ## Citation
 
-Please cite the associated scientific paper (add DOI when available).
+Please cite the associated scientific paper: 
+https://doi.org/10.1021/acs.jcim.5c00880
 
 ## License
 
-Provided by the Cambridge Crystallographic Data Centre (CCDC).  See license notice in the script header for detailed terms and conditions.
+Provided by the Cambridge Crystallographic Data Centre (CCDC).  See the license file and the notice in the script header for detailed terms and conditions.
 
 ## Support
 

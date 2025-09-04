@@ -12,20 +12,12 @@
 # No warranty: regardless of the intent of the parties, CCDC makes no warranty that any script is fit for any           
 # particular purpose.                                                                                                   
 #                                                                                                                       
-# License grant: By accepting the PROTAC Conformer Generator (PCG) script from CCDC, each user accedes to the following
-# terms:
-#                                                                                                                       
-# - The PCG script remains the property of CCDC. Regardless of any changes made by a user, the original source code and
-#   script remains the property of CCDC and users agree to make no claim of ownership thereof.
-# - Users are granted a license to use the PCG script for any purpose, and to change or modify (edit) the script to suit
-#   specific needs.
-# - Users may not share the PCG script (unmodified or modified by the user) with any third party without permission from
-#   CCDC.
-# - Users will acknowledge the original authors when using PCG and derived scripts in their research.
-#                                                                                                                       
+# License grant: The CCDC PROTACs Conformer Generator © 2025 by CCDC is licensed under CC BY-SA 4.0.
+# To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+#
 # Please note, this script is provided as-is, but is not formally supported by CCDC at this time.                       
 #                                                                                                                       
-# Originally created by Jason Cole (cole@ccdc.cam.ac.uk) and the Cambridge Crystallographic Data Centre.
+# Originally created by Jason Cole (cole@ccdc.cam.ac.uk) and the CCDC.
 # Parallel implementation, bug fixes, and code cleanup by Kepa K. Burusco-Goni (kburusco@ccdc.cam.ac.uk).
 # Documentation, bug fixes, and code cleanup by Fabio Montisci (fmontisci@ccdc.cam.ac.uk).
 #
